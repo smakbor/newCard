@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+
+}
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image ""card-text"  "stats";
+    /* width: 300px; */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    background-color: lightgray;
+    border:1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    
+    text-align: center;
+}
+.card-img{
+    background:url("pic-dan.jpg");
+  background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    grid-area: image;
+}
